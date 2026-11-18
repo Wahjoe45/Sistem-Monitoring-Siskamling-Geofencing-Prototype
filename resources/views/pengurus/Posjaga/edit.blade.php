@@ -74,7 +74,7 @@
                     ease-in-out
                     m-0
                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                  " name="deskripsiPos" value="{{ old('deskripsiPos', $posjaga->deskripsiPos) }}" readonly>
+                  " name="deskripsiPos" value="{{ old('deskripsiPos', $posjaga->deskripsiPos) }}">
 
                 <!-- error message untuk deskripsi pos -->
                 @error('deskripsiPos')
