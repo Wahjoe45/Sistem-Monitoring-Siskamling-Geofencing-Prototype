@@ -14,10 +14,12 @@ class User extends Authenticatable
     protected $keyType = 'int';
     protected $fillable = [
         'nama',
+        'blok',
         'username',
         'password',
         'role',
         'no_telepon',
+        'blok',
     ];
 
     protected $hidden = [
