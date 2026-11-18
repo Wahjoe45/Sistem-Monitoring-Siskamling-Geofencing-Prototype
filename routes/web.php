@@ -28,3 +28,6 @@ Route::middleware(['auth', 'checkrole:warga'])
 //Fitur Register
 Route::get('/register', [RegisterController::class, 'show'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
+
+//olah data pos jaga
+Route::resource('posjaga', \App\Http\Controllers\PosjagaController::class);
