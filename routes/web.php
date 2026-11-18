@@ -30,4 +30,6 @@ Route::get('/register', [RegisterController::class, 'show'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
 
 //olah data pos jaga
-Route::resource('posjaga', \App\Http\Controllers\PosjagaController::class);
+Route::middleware(['auth', 'checkrole:pengurus'])->group(function () {
+    Route::resource('posjaga', \App\Http\Controllers\PosjagaController::class);
+    });

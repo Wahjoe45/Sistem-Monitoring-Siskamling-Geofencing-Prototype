@@ -15,7 +15,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('posjaga.index') }}">
             <i class="fas fa-fw fa-file-alt"></i>
             <span>Data Pos Jaga</span>
         </a>
